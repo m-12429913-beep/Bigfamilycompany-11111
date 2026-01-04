@@ -128,18 +128,6 @@ const App: React.FC = () => {
 
   return (
     <div className="flex h-screen overflow-hidden bg-white">
-      <style>{`
-        .canva-sidebar {
-          background: linear-gradient(180deg, #1e293b 0%, #0f172a 100%);
-        }
-        .canva-purple {
-          background: linear-gradient(135deg, #7d2ae8 0%, #a855f7 100%);
-        }
-        .canva-purple-hover {
-          background: linear-gradient(135deg, #6a24c5 0%, #9333ea 100%);
-        }
-      `}</style>
-
       <Sidebar activeTool={activeTool} setActiveTool={setActiveTool} />
 
       {activeTool === 'ai-magic' && (
@@ -197,7 +185,7 @@ const App: React.FC = () => {
 
             <button
               onClick={handleExport}
-              className="px-6 py-2 canva-purple hover:canva-purple-hover text-white rounded-lg text-sm font-bold flex items-center gap-2 transition-colors shadow-md"
+              className="px-6 py-2 canva-purple text-white rounded-lg text-sm font-bold flex items-center gap-2 transition-colors shadow-md"
             >
               <Download size={16} />
               Export

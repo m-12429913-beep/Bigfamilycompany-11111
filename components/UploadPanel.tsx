@@ -14,7 +14,7 @@ const UploadPanel: React.FC<UploadPanelProps> = ({ assets, onUpload, onAddAssetT
     <div className="w-[360px] bg-white border-r border-gray-200 flex flex-col h-full overflow-y-auto">
       <div className="p-5 border-b border-gray-100">
         <h2 className="text-lg font-bold text-gray-900 mb-4">Uploads</h2>
-        <label className="w-full py-3 canva-purple hover:canva-purple-hover text-white rounded-lg font-bold flex items-center justify-center gap-2 cursor-pointer transition-all shadow-md">
+        <label className="w-full py-3 canva-purple text-white rounded-lg font-bold flex items-center justify-center gap-2 cursor-pointer transition-all shadow-md">
           <Upload size={18} />
           Upload files
           <input type="file" className="hidden" onChange={onUpload} accept="image/*,video/*" multiple />

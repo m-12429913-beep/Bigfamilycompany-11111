@@ -97,9 +97,9 @@ const MagicPanel: React.FC<MagicPanelProps> = ({ onVideoGenerated, aspectRatio }
               <Info size={16} className="text-[#7d2ae8] shrink-0 mt-0.5" />
               <p className="text-xs text-indigo-900 leading-relaxed font-medium">Link your Google AI Studio API key with billing enabled to generate videos.</p>
             </div>
-            <button 
+            <button
               onClick={async () => { await VeoService.requestApiKey(); setShowKeyDialog(false); }}
-              className="w-full py-2.5 canva-purple hover:canva-purple-hover text-white text-xs font-bold rounded-lg transition-colors"
+              className="w-full py-2.5 canva-purple text-white text-xs font-bold rounded-lg transition-colors"
             >
               Link API Key
             </button>
@@ -136,7 +136,7 @@ const MagicPanel: React.FC<MagicPanelProps> = ({ onVideoGenerated, aspectRatio }
         <button
           onClick={handleGenerate}
           disabled={isGenerating || (!prompt.trim() && activeTab === GeneratorTab.TEXT_TO_VIDEO)}
-          className="w-full py-4 canva-purple hover:canva-purple-hover disabled:bg-gray-200 disabled:text-gray-400 rounded-xl font-bold text-white flex items-center justify-center gap-2 transition-all shadow-md active:scale-95"
+          className="w-full py-4 canva-purple disabled:bg-gray-200 disabled:text-gray-400 rounded-xl font-bold text-white flex items-center justify-center gap-2 transition-all shadow-md active:scale-95"
         >
           {isGenerating ? (
             <>
